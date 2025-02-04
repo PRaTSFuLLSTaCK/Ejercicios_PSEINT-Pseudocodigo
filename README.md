@@ -5,13 +5,15 @@ Este repositorio contiene una colección de ejercicios y prácticas realizados c
 ## 📌 Contenidos del Repositorio
 
 ```
-📂 practicas/
- ├── 📂 basico/        # Conceptos básicos (variables, operadores, estructuras de control)
- ├── 📂 condicionales/ # Uso de estructuras condicionales (si, si-anidado, segun)
- ├── 📂 ciclos/        # Estructuras repetitivas (mientras, repetir, para)
- ├── 📂 arreglos/      # Manejo de vectores y matrices
- ├── 📂 funciones/     # Creación y uso de subprocesos y funciones
- ├── 📂 proyectos/     # Casos prácticos y mini-proyectos
+📂 algoritmos/
+ ├── 📂 0-C/         # Algoritmos cuyos nombres comienzan con 0-C
+ ├── 📂 D-F/         # Algoritmos cuyos nombres comienzan con D-F
+ ├── 📂 G-I/         # Algoritmos cuyos nombres comienzan con G-I
+ ├── 📂 J-O/         # Algoritmos cuyos nombres comienzan con J-O
+ ├── 📂 P-T/         # Algoritmos cuyos nombres comienzan con P-T
+ ├── 📂 U-Z/         # Algoritmos cuyos nombres comienzan con U-Z
+📂 EJERCICIOS PSEINT/
+ ├── 📂 ejemplos/    # Ejemplos de ejercicios en pseudocódigo
 ```
 
 ## 🛠 Requisitos
