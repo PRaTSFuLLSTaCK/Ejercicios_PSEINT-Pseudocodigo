@@ -1,0 +1,35 @@
+Proceso FacturaDeUnCliente
+	Escribir Sin Saltar "Ingrese el nombre:";
+	Leer nombre;
+	Escribir Sin Saltar "Ingrese el RFC:";
+	Leer RFC;
+	Escribir Sin Saltar "Ingrese el direccion:";
+	Leer direccion;
+	Escribir Sin Saltar "Ingrese el concepto del primer producto:";
+	Leer concepto_del_primer_producto;
+	Escribir Sin Saltar "Ingrese el concepto del segundo producto:";
+	Leer concepto_del_segundo_producto;
+	Escribir Sin Saltar "Ingrese el valor de cantidad del primer producto:";
+	Leer cantidad_del_primer_producto;
+	Escribir Sin Saltar "Ingrese el valor de cantidad del segundo producto:";
+	Leer cantidad_del_segundo_producto;
+	Escribir Sin Saltar "Ingrese el valor de precio unitario del primer producto:";
+	Leer precio_unitario_del_primer_producto;
+	Escribir Sin Saltar "Ingrese el valor de precio unitario del segundo producto:";
+	Leer precio_unitario_del_segundo_producto;
+	subtotal_del_primer_producto <- cantidad_del_primer_producto*precio_unitario_del_primer_producto;
+	subtotal_del_segundo_producto <- cantidad_del_segundo_producto*precio_unitario_del_segundo_producto;
+	subtotal_de_la_compra <- subtotal_del_primer_producto+subtotal_del_segundo_producto;
+	IVA <- subtotal_de_la_compra*0.16;
+	total_de_la_compra <- subtotal_de_la_compra+IVA;
+	Escribir "Nombre: ", nombre;
+	Escribir "RFC: ", RFC;
+	Escribir "Direccion: ", direccion;
+	Escribir "Concepto del primer producto: ", concepto_del_primer_producto;
+	Escribir "Concepto del segundo producto: ", concepto_del_segundo_producto;
+	Escribir "Valor de IVA: ", IVA;
+	Escribir "Valor de subtotal de la compra: ", subtotal_de_la_compra;
+	Escribir "Valor de subtotal del primer producto: ", subtotal_del_primer_producto;
+	Escribir "Valor de subtotal del segundo producto: ", subtotal_del_segundo_producto;
+	Escribir "Valor de total de la compra: ", total_de_la_compra;
+FinProceso

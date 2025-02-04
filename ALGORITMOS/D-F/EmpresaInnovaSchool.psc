@@ -1,0 +1,67 @@
+Proceso EmpresaInnovaSchool
+	Repetir
+		Escribir Sin Saltar "Ingrese el valor de numero de hijos:";
+		Leer numero_de_hijos;
+		Escribir "Seleccione el valor de condicion de trabajo.";
+		Escribir "    1.- Estable";
+		Escribir "    2.- Contratado";
+		Escribir Sin Saltar "    :";
+		Repetir
+			Leer condicion_de_trabajo;
+			Si condicion_de_trabajo<1 O condicion_de_trabajo>2 Entonces
+				Escribir Sin Saltar "Valor incorrecto. Ingréselo nuevamente.: ";
+			FinSi
+		Hasta Que condicion_de_trabajo>=1 Y condicion_de_trabajo<=2;
+		Escribir "Seleccione el valor de grado.";
+		Escribir "    1.- Sin grado";
+		Escribir "    2.- Maestría";
+		Escribir "    3.- Doctorado";
+		Escribir Sin Saltar "    :";
+		Repetir
+			Leer grado;
+			Si grado<1 O grado>3 Entonces
+				Escribir Sin Saltar "Valor incorrecto. Ingréselo nuevamente.: ";
+			FinSi
+		Hasta Que grado>=1 Y grado<=3;
+		sueldo_bruto_mensual <- 0;
+		Si condicion_de_trabajo = 1 Y grado = 1 Entonces
+			sueldo_bruto_mensual <- 2000;
+		FinSi
+		Si condicion_de_trabajo = 1 Y grado = 2 Entonces
+			sueldo_bruto_mensual <- 3000;
+		FinSi
+		Si condicion_de_trabajo = 1 Y grado = 3 Entonces
+			sueldo_bruto_mensual <- 4000;
+		FinSi
+		Si condicion_de_trabajo = 2 Y grado = 1 Entonces
+			sueldo_bruto_mensual <- 1000;
+		FinSi
+		Si condicion_de_trabajo = 2 Y grado = 2 Entonces
+			sueldo_bruto_mensual <- 2000;
+		FinSi
+		Si condicion_de_trabajo = 2 Y grado = 3 Entonces
+			sueldo_bruto_mensual <- 3000;
+		FinSi
+		bono <- 0;
+		Si numero_de_hijos>=1 Y numero_de_hijos<3 Entonces
+			bono <- sueldo_bruto_mensual*0.1;
+		FinSi
+		Si numero_de_hijos>=3 Y numero_de_hijos<6 Entonces
+			bono <- sueldo_bruto_mensual*0.15;
+		FinSi
+		Si numero_de_hijos>=6 Entonces
+			bono <- sueldo_bruto_mensual*0.2;
+		FinSi
+		AFP <- (sueldo_bruto_mensual+bono)*0.06;
+		sueldo_neto_mensual <- sueldo_bruto_mensual+bono-AFP;
+		Escribir "Valor de AFP: ", AFP;
+		Escribir "Valor de bono: ", bono;
+		Escribir "Valor de sueldo bruto mensual: ", sueldo_bruto_mensual;
+		Escribir "Valor de sueldo neto mensual: ", sueldo_neto_mensual;
+		Escribir "";
+		Repetir
+			Escribir Sin Saltar "¿Desea repetir el proceso? (S/N):";
+			Leer tecla_repetir;
+		Hasta Que tecla_repetir='s' O tecla_repetir='n' O tecla_repetir='S' O tecla_repetir='N'
+	Hasta Que tecla_repetir='n' O tecla_repetir='N'
+FinProceso
